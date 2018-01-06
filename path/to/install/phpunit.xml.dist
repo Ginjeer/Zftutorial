@@ -4,5 +4,25 @@
         <testsuite name="ZendSkeletonApplication Test Suite">
             <directory>./module/Portal/test</directory>
         </testsuite>
+
+        <testsuite name="Platform">
+            <directory suffix="Test.php">C:\xampp\htdocs\Zftutorial\path\to\install\module\Portal\test\Controller
+            </directory>
+            <file></file>
+        </testsuite>
     </testsuites>
+    <filter>
+        <whitelist processuncoverdFilesFromWhitelist="true">
+            <directory suffix=".php">C:\xampp\htdocs\Zftutorial\path\to\install\module\Portal\src\Controller
+            </directory>
+            <exclude>
+                <file></file>
+                <file></file>
+            </exclude>
+        </whitelist>
+    </filter>
+    <php>
+        <const name="PHPUNIT_TESTSUTE" value="true"/>
+    </php>
 </phpunit>
+
